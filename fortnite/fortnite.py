@@ -14,8 +14,10 @@ from redbot.core.commands import Context
 from redbot.core.utils.menus import menu, DEFAULT_CONTROLS
 
 _ = Translator("Fortnite", __file__)
+BaseCog = getattr(commands, "Cog", object)
 
-class Fortnite:
+
+class Fortnite(BaseCog):
     """Fortnite commands."""
 
 
